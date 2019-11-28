@@ -1,6 +1,6 @@
 # Intel D510MO
 
-**This image is blob free except micro-code (needed even in libreboot)**
+**This image is blob free**
 
 # Test board specs
 
