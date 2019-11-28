@@ -1,3 +1,19 @@
+# Intel D510MO
+
+* This image is blob free except micro-code (needed even in libreboot)
+
+# Test board specs
+
+CPU: Atom D510 more info on [ark](https://ark.intel.com/content/www/us/en/ark/products/43098/intel-atom-processor-d510-1m-cache-1-66-ghz.html "Atom D510 ark")
+RAM: ADATA 2x2Go DDR2 800
+mPCIe extension card:  IOCREST 4 ports SATA III 6G Mini PCI Express Marvel 88SE9215
+SSD: 120Gb Sandisk
+HDD: 6Tb WD Red + 4x3Tb WD Red RAID 5 mdam
+OS: OMV 4.1.22-amd64 more info [here](https://www.openmediavault.org/ "OMV official website")
+
+
+# Image content
+
 This image contains the following sections that can be manipulated with this tool:
 
 'COREBOOT' (CBFS, size 1048064, offset 512)
