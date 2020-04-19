@@ -15,5 +15,5 @@
 # Petitboot compilation
 ```
 sudo apt-get install -y bison build-essential curl flex gnat-5 libncurses5-dev m4 zlib1g-devlibtool \
-libgcrypt  git lzma busybox petitboot systemd autotools-dev autoconf intltool gperf libcap-dev
+libgcrypt  git lzma busybox petitboot systemd autotools-dev autoconf intltool gperf libcap-dev libblkid-dev
 ```
