@@ -21,3 +21,5 @@ libgcrypt  git lzma busybox petitboot systemd autotools-dev autoconf intltool gp
 python-lxml libmount-dev zlib1g-dev uuid-dev libdigest-sha-perl libelf-dev bc bzip2 bison gnupg iasl m4 nasm \
 patch python wget cpio ccache pkg-config cmake libusb-1.0-0-dev pkg-config texinfo
 ```
+2 - follow this guide 
+https://www.raptorengineering.com/content/kb/1.html 
