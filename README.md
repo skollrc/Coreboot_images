@@ -13,6 +13,8 @@
 * modifier les README.md des boards avec un tableau
 
 # Petitboot compilation
+
+1 - Install requested packages
 ```
 sudo apt-get install -y bison build-essential curl flex gnat-5 libncurses5-dev m4 zlib1g-devlibtool \
 libgcrypt  git lzma busybox petitboot systemd autotools-dev autoconf intltool gperf libcap-dev libblkid-dev \
