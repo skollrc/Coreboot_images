@@ -1,11 +1,15 @@
 # Note for Tianocore
 If you had a classical bios install before moving to tinocore, use a Debian live image (or any other disto) and do this:
 
+* resize /dev/sda1 to free at least 200Mb free space
+* create a fat32 partition with "boot" flag (dev/sda2, with parted or gparted) using the newly created free space
+
+Then do this:
 ```
-sudo apt-get install -y grub-efi-amd64
+sudo apt-get install -y grub-efi-amd64 gawk
 sudo mount /dev/sda1 /mnt
 sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/sda3 /mnt/boot/efi
+sudo mount /dev/sda2 /mnt/boot/efi
 for d in dev sys proc usr run; do sudo mount -B /$d /mnt/$d; done
 sudo modprobe efivars
 sudo chroot /mnt
