@@ -1,3 +1,20 @@
+# Note for Tianocore
+If you had a classical bios install before moving to tinocore, use a Debian live image (or any other disto) and do this:
+
+<code>
+sudo apt-get install -y grub-efi-amd64
+sudo mount /dev/sda1 /mnt
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/sda3 /mnt/boot/efi
+for d in dev sys proc usr run; do sudo mount -B /$d /mnt/$d; done
+sudo modprobe efivars
+sudo chroot /mnt
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ubuntu --recheck --no-floppy --debug
+</code> 
+
+Then reboot and it shold work
+
+# Seabios image content
 This image contains the following sections that can be manipulated with this tool:
 
 'RW_MRC_CACHE' (size 65536, offset 11534336)
