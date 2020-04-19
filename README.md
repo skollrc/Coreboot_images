@@ -22,4 +22,4 @@ python-lxml libmount-dev zlib1g-dev uuid-dev libdigest-sha-perl libelf-dev bc bz
 patch python wget cpio ccache pkg-config cmake libusb-1.0-0-dev pkg-config texinfo
 ```
 2 - follow this guide 
-<br\> https://www.raptorengineering.com/content/kb/1.html 
+<p> https://www.raptorengineering.com/content/kb/1.html <\p>
