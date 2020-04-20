@@ -1,3 +1,12 @@
+# Note for Petitboot
+CBFS size had been change from 0x0100000 to 0x0999000 to be able to contain the bzImage (witch contain petitboot payload, kernel and initramfs). I used this repo to create the rom: https://github.com/ArthurHeymans/petitboot_for_coreboot and official coreboot repo (lastest version).
+
+To flash correctly with the new rom using flashrom:
+
+```
+sudo flashrom -p internal:boardmismatch=force -w 
+```
+
 # Note for Tianocore
 If you had a classical bios install before moving to tinocore, use a Debian live image (or any other disto) and do this:
 
